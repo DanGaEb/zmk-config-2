@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: feat/pointers  # This is the gold standard for mouse support
+      remote: urob
+      revision: v0.3-pointing # This branch is specifically built for mouse support
       import: app/west.yml
   self:
     path: config
