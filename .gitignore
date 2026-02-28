@@ -1,2 +1,4 @@
 
 .zmk/
+flash.ps1
+west.yml
