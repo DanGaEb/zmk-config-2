@@ -23,16 +23,25 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Default Layer";
+            display-name = "Base Layer";
             bindings = <
-&kp Q  &kp W  &kp F  &kp P       &kp B                          &kp J                    &kp L  &kp U     &kp Y     &kp BSPC
-&kp A  &kp R  &kp S  &kp T       &kp G                          &kp M                    &kp N  &kp E     &kp I     &kp O
-&kp Z  &kp X  &kp C  &kp D       &kp V                          &kp K                    &kp H  &kp BSPC  &kp BSPC  &kp BSPC
+&kp Q  &kp W  &kp F  &kp P       &kp B                          &kp J                    &kp L  &kp U      &kp Y    &kp SEMI
+&kp A  &kp R  &kp S  &kp T       &kp G                          &kp M                    &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D       &kp V                          &kp K                    &kp H  &kp COMMA  &kp DOT  &kp FSLH
                      &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 SPACE  &to 1
             >;
         };
 
-        layer_1 {
+        keyboard_movement {
+            bindings = <
+&none     &none           &kp PAGE_UP    &kp DEL    &none     &none   &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_PASTE  &none
+&kp LEFT  &kp DOWN_ARROW  &kp UP         &kp RIGHT  &none     &none   &kp RALT       &kp RGUI        &kp RCTRL       &kp RSHFT
+&none     &kp HOME        &kp PAGE_DOWN  &kp END    &none     &none   &kp C_AC_UNDO  &kp C_AC_REDO   &kp C_AC_FIND   &none
+                                         &to 0      &trans    &trans  &to 2
+            >;
+        };
+
+        mouse_movement {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -41,7 +50,7 @@
             >;
         };
 
-        layer_2 {
+        functions {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -50,7 +59,7 @@
             >;
         };
 
-        layer_3 {
+        left_half {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -59,16 +68,7 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_5 {
+        right_half {
             bindings = <
 &out OUT_TOG  &bt BT_NXT  &studio_unlock  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans        &trans      &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
