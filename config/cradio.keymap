@@ -47,16 +47,16 @@
 &out OUT_TOG  &studio_unlock  &trans     &kp C_MUTE  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &mkp MCLK     &mkp RCLK       &trans
 &kp LSHFT     &kp LCTRL       &kp LGUI   &kp LALT    &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &trans        &mkp RCLK       &mkp MCLK  &mkp LCLK   &kp C_AC_BACK        &kp C_AC_FORWARD      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                         &to 0       &mkp LCLK            &mkp RCLK             &to 3
+                                         &to 0       &trans               &trans                &to 3
             >;
         };
 
         functions {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
+&kp N1     &kp N2     &kp N3    &kp N4    &kp N5     &kp N6   &kp N7    &kp N8    &kp N9     &kp N0
+&kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &kp F11    &kp F12  &kp RALT  &kp RGUI  &kp LCTRL  &kp LSHFT
+                                &to 0     &trans     &trans   &to 0
             >;
         };
 
