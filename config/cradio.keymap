@@ -35,19 +35,19 @@
 
         keyboard_movement {
             bindings = <
-&none     &none           &kp PAGE_UP    &kp DEL    &none     &none   &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_PASTE  &none
-&kp LEFT  &kp DOWN_ARROW  &kp UP         &kp RIGHT  &none     &none   &kp RALT       &kp RGUI        &kp RCTRL       &kp RSHFT
-&none     &kp HOME        &kp PAGE_DOWN  &kp END    &none     &none   &kp C_AC_UNDO  &kp C_AC_REDO   &kp C_AC_FIND   &none
-                                         &to 0      &trans    &trans  &to 2
+&none     &none           &kp PAGE_UP    &kp DEL    &bt BT_CLR      &none   &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_PASTE  &none
+&kp LEFT  &kp DOWN_ARROW  &kp UP         &kp RIGHT  &bt BT_SEL 0    &none   &kp RALT       &kp RGUI        &kp RCTRL       &kp RSHFT
+&none     &kp HOME        &kp PAGE_DOWN  &kp END    &bt BT_SEL 1    &none   &kp C_AC_UNDO  &kp C_AC_REDO   &kp C_AC_FIND   &none
+                                         &to 0      &trans          &trans  &to 2
             >;
         };
 
         mouse_movement {
             bindings = <
-&trans     &trans     &trans     &kp C_MUTE  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &mkp MCLK     &mkp RCLK       &trans
-&kp LSHFT  &kp LCTRL  &kp LGUI   &kp LALT    &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&trans     &mkp RCLK  &mkp MCLK  &mkp LCLK   &kp C_AC_BACK        &kp C_AC_FORWARD      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                 &to 0       &mkp LCLK            &mkp RCLK             &to 3
+&out OUT_TOG  &studio_unlock  &trans     &kp C_MUTE  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &mkp MCLK     &mkp RCLK       &trans
+&kp LSHFT     &kp LCTRL       &kp LGUI   &kp LALT    &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&trans        &mkp RCLK       &mkp MCLK  &mkp LCLK   &kp C_AC_BACK        &kp C_AC_FORWARD      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+                                         &to 0       &mkp LCLK            &mkp RCLK             &to 3
             >;
         };
 
