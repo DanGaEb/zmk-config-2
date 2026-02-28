@@ -26,7 +26,7 @@
         default_layer {
             display-name = "Base Layer";
             bindings = <
-&kp Q  &kp W  &kp F  &kp P       &kp B                          &kp J                    &kp L  &kp U      &kp Y    &kp SEMI
+&kp Q  &kp W  &kp F  &kp P       &kp B                          &kp J                    &kp L  &kp U      &kp Y    &kp SQT
 &kp A  &kp R  &kp S  &kp T       &kp G                          &kp M                    &kp N  &kp E      &kp I    &kp O
 &kp Z  &kp X  &kp C  &kp D       &kp V                          &kp K                    &kp H  &kp COMMA  &kp DOT  &kp FSLH
                      &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 SPACE  &to 1
@@ -35,7 +35,7 @@
 
         keyboard_movement {
             bindings = <
-&none     &none           &kp PAGE_UP    &kp DEL    &bt BT_CLR      &none   &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_PASTE  &none
+&none     &none           &kp PAGE_UP    &none      &bt BT_CLR      &none   &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_PASTE  &none
 &kp LEFT  &kp DOWN_ARROW  &kp UP         &kp RIGHT  &bt BT_SEL 0    &none   &kp RALT       &kp RGUI        &kp RCTRL       &kp RSHFT
 &none     &kp HOME        &kp PAGE_DOWN  &kp END    &bt BT_SEL 1    &none   &kp C_AC_UNDO  &kp C_AC_REDO   &kp C_AC_FIND   &none
                                          &to 0      &trans          &trans  &to 2
@@ -62,19 +62,19 @@
 
         left_half {
             bindings = <
-&kp N1     &kp N2       &kp N3       &kp N4    &kp N5             &trans  &trans  &trans  &trans  &trans
-&kp GRAVE  &kp KP_LPAR  &kp KP_RPAR  &kp TAB   &kp NON_US_HASH    &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp LCTRL    &kp LGUI     &kp LALT  &kp ESC            &trans  &trans  &trans  &trans  &trans
-                                     &trans    &trans             &trans  &trans
+&kp N1     &kp N2       &kp N3       &kp N4    &kp N5             &trans  &trans      &trans  &trans  &trans
+&kp GRAVE  &kp KP_LPAR  &kp KP_RPAR  &kp TAB   &kp NON_US_HASH    &trans  &trans      &trans  &trans  &trans
+&kp LSHFT  &kp LCTRL    &kp LGUI     &kp LALT  &kp ESC            &trans  &trans      &trans  &trans  &trans
+                                     &trans    &trans             &trans  &kp DELETE
             >;
         };
 
         right_half {
             bindings = <
-&out OUT_TOG  &bt BT_NXT  &studio_unlock  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans        &trans      &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans        &trans      &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &kp N6     &kp N7    &kp N8    &kp N9     &kp N0
+&trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp RET   &kp SEMI  &kp LBKT   &kp RBKT
+&trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp RALT  &kp RGUI  &kp RCTRL  &kp NON_US_BACKSLASH
+                        &trans  &trans    &trans     &trans
             >;
         };
     };
