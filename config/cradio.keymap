@@ -47,7 +47,7 @@
 &trans     &trans     &trans     &kp C_MUTE  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &mkp MCLK     &mkp RCLK       &trans
 &kp LSHFT  &kp LCTRL  &kp LGUI   &kp LALT    &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &trans     &mkp RCLK  &mkp MCLK  &mkp LCLK   &kp C_AC_BACK        &kp C_AC_FORWARD      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                 &trans      &trans               &trans                &trans
+                                 &to 0       &mkp LCLK            &mkp RCLK             &to 3
             >;
         };
 
