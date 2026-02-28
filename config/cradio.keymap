@@ -62,10 +62,10 @@
 
         left_half {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp N1     &kp N2       &kp N3       &kp N4    &kp N5             &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp KP_LPAR  &kp KP_RPAR  &kp TAB   &kp NON_US_HASH    &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LCTRL    &kp LGUI     &kp LALT  &kp ESC            &trans  &trans  &trans  &trans  &trans
+                                     &trans    &trans             &trans  &trans
             >;
         };
 
