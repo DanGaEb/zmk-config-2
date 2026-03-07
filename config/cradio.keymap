@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "keys_uk.h"
+#include "keys_en_gb.h"
 
 / {
     behaviors {
@@ -36,8 +36,8 @@
 
         keyboard_movement {
             bindings = <
-&none     &kp C_AC_CUT   &kp C_AC_PASTE  &kp C_AC_COPY  &none     &bt BT_CLR    &none     &kp PAGE_UP    &none     &none
-&none     &kp C_AC_FIND  &kp C_AC_REDO   &kp C_AC_UNDO  &none     &bt BT_SEL 0  &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT
+&none     &kp LC(X)   &kp LC(V)  &kp LC(C) &none     &bt BT_CLR    &none     &kp PAGE_UP    &none     &none
+&none     &kp LC(F)  &kp LC(Y)   &kp LC(Z)  &none     &bt BT_SEL 0  &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT
 &kp LGUI  &kp LSHFT      &kp LALT        &kp LCTRL      &none     &bt BT_SEL 1  &kp HOME  &kp PAGE_DOWN  &kp END   &none
                                          &to 0          &trans    &trans        &to 2
             >;
