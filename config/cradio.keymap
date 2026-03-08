@@ -30,7 +30,7 @@
 &kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                      &kp GB_J                     &kp GB_L  &kp GB_U      &kp GB_Y    &kp GB_SQT
 &kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                      &kp GB_M                     &kp GB_N  &kp GB_E      &kp GB_I    &kp GB_O
 &kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                      &kp GB_K                     &kp GB_H  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
-                              &kp LSHIFT  &space_and_back 4 GB_SPACE    &space_and_back 5 BACKSPACE  &to 1
+                              &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 GB_SPACE  &to 1
             >;
         };
 
