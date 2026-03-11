@@ -4,7 +4,7 @@
 #include "keys_en_gb_extended.h"
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -49,8 +49,8 @@
 
         mouse_movement {
             bindings = <
-&out OUT_TOG  &studio_unlock  &mmv MOVE_UP    &kp C_MUTE       &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none
-&none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mkp LCLK       &msc SCRL_DOWN  &mkp RCLK        &none
+&out OUT_TOG  &studio_unlock  &mmv MOVE_UP    &kp C_MUTE       &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK  &msc SCRL_UP    &mkp RCLK  &none
+&none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &msc SCRL_LEFT       &msc SCRL_DOWN  &msc SCRL_RIGHT        &none
 &kp LGUI      &kp LSHFT       &kp LALT        &kp LCTRL        &kp C_AC_BACK        &kp C_AC_FORWARD      &none           &mkp MCLK       &none            &none
                                               &to 0            &trans               &trans                &to 3
             >;
@@ -66,7 +66,6 @@
         };
 
         VA {
-            display-name = " ";
             bindings = <
 &kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                       &kp E                       &kp I  &kp K         &kp GB_Y    &kp GB_SQT
 &kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                       &kp GB_M                    &kp H  &kp J         &kp L       &kp GB_O
