@@ -27,28 +27,28 @@
         default_layer {
             display-name = "Base Layer";
             bindings = <
-&kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                      &kp GB_J                     &kp GB_L  &kp GB_U      &kp GB_Y    &kp GB_SQT
-&kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                      &kp GB_M                     &kp GB_N  &kp GB_E      &kp GB_I    &kp GB_O
-&kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                      &kp GB_K                     &kp GB_H  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
+&kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                       &kp GB_J                    &kp GB_L  &kp GB_U      &kp GB_Y    &kp GB_SQT
+&kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                       &kp GB_M                    &kp GB_N  &kp GB_E      &kp GB_I    &kp GB_O
+&kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                       &kp GB_K                    &kp GB_H  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
                               &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 GB_SPACE  &to 1
             >;
         };
 
         keyboard_movement {
             bindings = <
-&none     &kp LC(GB_X)  &kp LC(GB_V)  &kp LC(GB_C)  &none     &bt BT_CLR    &none     &kp PAGE_UP    &none     &none
-&none     &kp LC(GB_F)  &kp LC(GB_Y)  &kp LC(GB_Z)  &none     &bt BT_SEL 0  &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT
-&kp LGUI  &kp LSHFT     &kp LALT      &kp LCTRL     &none     &bt BT_SEL 1  &kp HOME  &kp PAGE_DOWN  &kp END   &none
-                                      &to 0         &trans    &trans        &to 2
+&none     &kp LC(X)  &kp LC(V)  &kp LC(C)  &none     &bt BT_CLR    &kp HOME   &kp UP    &kp END    &none
+&none     &kp LC(F)  &kp LC(Y)  &kp LC(Z)  &none     &bt BT_SEL 0  &kp LEFT   &kp DOWN  &kp RIGHT  &none
+&kp LGUI  &kp LSHFT  &kp LALT   &kp LCTRL  &none     &bt BT_SEL 1  &kp PG_UP  &none     &kp PG_DN  &none
+                                &to 0      &trans    &trans        &to 2
             >;
         };
 
         mouse_movement {
             bindings = <
-&out OUT_TOG  &studio_unlock  &none      &kp C_MUTE  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &mkp MCLK     &mkp RCLK       &none
-&none         &mkp RCLK       &mkp MCLK  &mkp LCLK   &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&kp LGUI      &kp LSHFT       &kp LALT   &kp LCTRL   &kp C_AC_BACK        &kp C_AC_FORWARD      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                         &to 0       &trans               &trans                &to 3
+&out OUT_TOG  &studio_unlock  &mmv MOVE_UP    &kp C_MUTE       &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none
+&none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &mkp LCLK       &msc SCRL_DOWN  &mkp RCLK        &none
+&kp LGUI      &kp LSHFT       &kp LALT        &kp LCTRL        &kp C_AC_BACK        &kp C_AC_FORWARD      &none           &mkp MCLK       &none            &none
+                                              &to 0            &trans               &trans                &to 3
             >;
         };
 
