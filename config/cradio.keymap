@@ -1,14 +1,15 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include "keys_en_gb_extended.h"
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -33,13 +34,13 @@
 &kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                       &kp GB_J                    &kp GB_L  &kp GB_U      &kp GB_Y    &kp GB_SQT
 &kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                       &kp GB_M                    &kp GB_N  &kp GB_E      &kp GB_I    &kp GB_O
 &kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                       &kp GB_K                    &kp GB_H  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
-                              &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 GB_SPACE  &to 1
+                              &kp LSHIFT  &space_and_back 5 BACKSPACE    &space_and_back 6 GB_SPACE  &to 1
             >;
         };
 
         keyboard_movement {
             bindings = <
-&to 6     &kp LC(X)  &kp LC(V)  &kp LC(C)  &none     &bt BT_CLR    &kp HOME   &kp UP    &kp END    &none
+&to 4     &kp LC(X)  &kp LC(V)  &kp LC(C)  &none     &bt BT_CLR    &kp HOME   &kp UP    &kp END    &none
 &none     &kp LC(F)  &kp LC(Y)  &kp LC(Z)  &none     &bt BT_SEL 0  &kp LEFT   &kp DOWN  &kp RIGHT  &none
 &kp LGUI  &kp LSHFT  &kp LALT   &kp LCTRL  &none     &bt BT_SEL 1  &kp PG_UP  &none     &kp PG_DN  &none
                                 &to 0      &trans    &trans        &to 2
@@ -64,6 +65,16 @@
             >;
         };
 
+        VA {
+            display-name = " ";
+            bindings = <
+&kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                       &kp E                       &kp I  &kp K         &kp GB_Y    &kp GB_SQT
+&kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                       &kp GB_M                    &kp H  &kp J         &kp L       &kp GB_O
+&kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                       &kp U                       &kp N  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
+                              &kp LSHIFT  &space_and_back 5 BACKSPACE    &space_and_back 6 GB_SPACE  &to 1
+            >;
+        };
+
         left_half {
             bindings = <
 &kp GB_N1     &kp GB_N2       &kp GB_N3     &kp GB_N4   &kp GB_N5      &trans  &trans      &trans  &trans  &trans
@@ -79,16 +90,6 @@
 &trans  &trans  &trans  &trans  &trans    &kp GB_MINUS  &kp RET    &kp GB_SLASH  &kp GB_LBKT       &kp GB_RBKT
 &trans  &trans  &trans  &trans  &trans    &kp GB_EQUAL  &kp LCTRL  &kp LEFT_ALT  &kp GB_BACKSLASH  &kp LEFT_GUI
                         &trans  &trans    &trans        &trans
-            >;
-        };
-
-        VA {
-            display-name = " ";
-            bindings = <
-&kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P    &kp GB_B                       &kp E                       &kp I  &kp K         &kp GB_Y    &kp GB_SQT
-&kp GB_A  &kp GB_R  &kp GB_S  &kp GB_T    &kp GB_G                       &kp GB_M                    &kp H  &kp J         &kp L       &kp GB_O
-&kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_D    &kp GB_V                       &kp U                       &kp N  &kp GB_COMMA  &kp GB_DOT  &kp GB_SEMICOLON
-                              &kp LSHIFT  &space_and_back 4 BACKSPACE    &space_and_back 5 GB_SPACE  &to 1
             >;
         };
     };
