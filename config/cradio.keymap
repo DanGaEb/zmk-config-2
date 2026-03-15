@@ -51,7 +51,7 @@
             bindings = <
 &out OUT_TOG  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none
 &kp C_MUTE    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&kp LGUI      &kp LSHFT       &kp LALT        &kp LCTRL        &kp C_AC_BACK        &kp C_AC_FORWARD      &none           &mkp MCLK       &none            &studio_unlock
+&kp LGUI      &kp LSHFT       &kp LALT        &kp LCTRL        &kp C_AC_BACK        &kp C_AC_FORWARD      &none           &mkp MCLK       &none            &none
                                               &to 0            &trans               &trans                &to 3
             >;
         };
