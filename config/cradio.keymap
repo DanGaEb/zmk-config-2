@@ -25,6 +25,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        repeat {
+            timeout-ms = <20>;
+            bindings = <&mo 6>;
+            key-positions = <11 12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,6 +85,15 @@
         };
 
         right_half {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp GB_N6     &kp GB_N7  &kp GB_N8     &kp GB_N9         &kp GB_N0
+&trans  &trans  &trans  &trans  &trans    &kp GB_MINUS  &kp RET    &kp GB_SLASH  &kp GB_LBKT       &kp GB_RBKT
+&trans  &trans  &trans  &trans  &trans    &kp GB_EQUAL  &kp LCTRL  &kp LEFT_ALT  &kp GB_BACKSLASH  &kp LEFT_GUI
+                        &trans  &trans    &trans        &trans
+            >;
+        };
+
+        vim_arrows {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp GB_N6     &kp GB_N7  &kp GB_N8     &kp GB_N9         &kp GB_N0
 &trans  &trans  &trans  &trans  &trans    &kp GB_MINUS  &kp RET    &kp GB_SLASH  &kp GB_LBKT       &kp GB_RBKT
