@@ -43,7 +43,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Base Layer";
+            display-name = "Base";
             bindings = <
 &kp GB_Q  &kp GB_W  &kp GB_F  &kp GB_P           &kp GB_B                       &kp GB_J                    &kp GB_L  &kp GB_U      &kp GB_Y    &kp GB_SQT
 &kp GB_A  &kp GB_R  &kp GB_S  &vim_layer 6 GB_T  &kp GB_G                       &kp GB_M                    &kp GB_N  &kp GB_E      &kp GB_I    &kp GB_O
@@ -53,6 +53,7 @@
         };
 
         keyboard_movement {
+            display-name = "Nav";
             bindings = <
 &to 0     &kp LC(X)  &kp LC(V)  &kp LC(C)  &none     &bt BT_CLR    &kp HOME   &kp UP    &kp END    &none
 &none     &kp LC(F)  &kp LC(Y)  &kp LC(Z)  &none     &bt BT_SEL 0  &kp LEFT   &kp DOWN  &kp RIGHT  &none
@@ -62,6 +63,7 @@
         };
 
         mouse_movement {
+            display-name = "Mouse";
             bindings = <
 &out OUT_TOG  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none
 &kp C_MUTE    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
@@ -71,6 +73,7 @@
         };
 
         functions {
+            display-name = "Fn";
             bindings = <
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
 &kp GB_N1  &kp GB_N2  &kp GB_N3  &kp GB_N4  &kp GB_N5    &kp GB_N6  &kp GB_N7  &kp GB_N8  &kp GB_N9  &kp GB_N0
@@ -80,6 +83,7 @@
         };
 
         left_half {
+            display-name = "Left";
             bindings = <
 &kp GB_N1     &kp GB_N2       &kp GB_N3     &kp GB_N4   &kp GB_N5      &trans  &trans      &trans  &trans  &trans
 &kp GB_GRAVE  &kp GB_LPAR     &kp GB_RPAR   &kp ESCAPE  &kp TAB        &trans  &trans      &trans  &trans  &trans
@@ -89,6 +93,7 @@
         };
 
         right_half {
+            display-name = "Right";
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp GB_N6     &kp GB_N7  &kp GB_N8     &kp GB_N9         &kp GB_N0
 &trans  &trans  &trans  &trans  &trans    &kp GB_MINUS  &kp RET    &kp GB_SLASH  &kp GB_LBKT       &kp GB_RBKT
@@ -98,6 +103,7 @@
         };
 
         vim_arrows {
+            display-name = "Vim";
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp GB_K  &trans    &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &kp GB_H  &kp GB_J  &kp GB_L  &trans
